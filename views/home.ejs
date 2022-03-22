@@ -1,0 +1,55 @@
+<%- include('partials/_header.ejs') %>
+
+
+
+<form autocomplete="off">
+    <div>
+        <h2 class="header--main">Bill</h2>
+        <div class="billbox">
+            <span class="currency"></span>
+            <input type="number" name="num1" id="num1" inputmode=”numeric” placeholder="0" required>
+        </div>
+        <h2 class="header--main">Select Tip %</h2>
+
+        <div class="tipbox">
+            <li class="tipamount">5</li>
+            <li class="tipamount">10</li>
+            <li class="tipamount">15</li>
+            <li class="tipamount">25</li>
+            <li class="tipamount">50</li>
+            <div class="custombox">
+                <span class="custom">
+                    Custom
+                </span>
+                <input type="number" name="num2" class="tipamount" id="num2" placeholder="0" required>
+
+            </div>
+        </div>
+
+        <h2 class="header--main">Number of People</h2>
+        <div class="peoplebox">
+            <span class="peopleicon"></span>
+            <input type="number" name="num3" id="num3" inputmode=”numeric” placeholder="0" required>
+
+        </div>
+    </div>
+    <div class="totalbox">
+        <h2>Tip Amount
+            <br>
+            /Per Person
+            <span class="tipsplit">
+                0.00
+            </span>
+        </h2>
+        <h2>Total
+            <br>
+            /Per Person
+            <span class="totalsplit">
+                0.00
+            </span>
+        </h2>
+        <button type="reset" id="reset">Reset</button>
+    </div>
+</form>
+
+<%- include('partials/_footer.ejs') %>

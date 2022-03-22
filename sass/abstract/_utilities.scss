@@ -1,0 +1,15 @@
+body {
+    @media (max-width: $bp-desktop) {
+        color: black;
+    }
+
+    @media (max-width: $bp-tablet) {
+        color: black;
+    }
+    @media (max-width: $bp-mobile) {
+        color: black;
+    }
+    @media (max-width: $bp-mobile-sm) {
+        color: black;
+    }
+}

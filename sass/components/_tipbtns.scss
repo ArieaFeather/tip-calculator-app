@@ -1,0 +1,28 @@
+#num2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    &::placeholder {
+        color: $color-neutral-1;
+    }
+}
+
+.tipamount {
+    list-style: none;
+    text-align: center;
+    background-color: $color-neutral-1;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    &:hover,
+    &:active {
+        background-color: $color-primary;
+        color: $color-neutral-1;
+    }
+}
+
+.active {
+    background-color: $color-primary;
+    color: $color-neutral-1;
+}

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+//BREAKPOINTS
+/*
+Desktop: 1440px
+Tablet: 768px
+Mobile: 375px
+Mobile-Sm: 325px
+*/
+
+$bp-desktop-lg: 1440px;
+$bp-desktop: 1220px;
+$bp-tablet: 768px;
+$bp-mobile: 375px;
+$bp-mobile-sm: 325px;
+
+//COLOURS
+
+$color-primary: #26c0ab; //Strong cyan
+$color-neutral-1: #00494d; //Very dark cyan
+$color-neutral-2: #5e7a7d; //Dark grayish cyan-1
+$color-neutral-3: #7f9c9f; //Dark grayish cyan-2
+$color-neutral-4: #c5e4e7; //Light grayish cyan-1
+$color-neutral-5: #f4fafa; //Light grayish cyan-2
+$color-neutral-6: #ffffff; //White
+
+//FONTS AND TYPOGRAPHY
+
+$default-font-size: 24px;
+$font-family-primary: "Space Mono", monospace;
+$font-weight-sm: 400;
+$font-weight-md: 500;
+$font-weight-lg: 700;

@@ -1,0 +1,128 @@
+body {
+    font-family: $font-family-primary;
+    font-size: $default-font-size;
+}
+input {
+    display: block;
+    background-color: $color-neutral-4;
+    border: none;
+    border-radius: 4px;
+    font-family: $font-family-primary;
+    font-size: 24px;
+    color: $color-neutral-2;
+    text-align: right;
+    width: 100%;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        display: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+h2 {
+    margin: 0;
+    font-size: 18px;
+    color: $color-neutral-2;
+}
+form {
+    margin: 0 auto;
+    margin-top: 5rem;
+    border: 1px solid $color-neutral-1;
+    border-radius: 25px;
+    padding: 1.5rem;
+}
+
+.billbox {
+    position: relative;
+    .currency::before {
+        content: url("/images/icon-dollar.svg");
+        position: absolute;
+        left: 10px;
+        color: $color-neutral-2;
+    }
+}
+.peoplebox {
+    position: relative;
+    .peopleicon::before {
+        content: url("/images/icon-person.svg");
+        position: absolute;
+        left: 10px;
+        color: $color-neutral-2;
+    }
+}
+
+.totalbox {
+    background-color: $color-neutral-1;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    display: grid;
+    border-radius: 11px;
+    grid-template-rows: 2fr 2fr 1fr;
+    @media (max-width: $bp-desktop) {
+        grid-template-rows: repeat(3, 2fr);
+        grid-gap: 2rem;
+    }
+    h2 {
+        position: relative;
+        color: $color-neutral-6;
+    }
+    .tipsplit,
+    .totalsplit {
+        color: $color-primary;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 2rem;
+        @media (max-width: $bp-mobile) {
+            position: relative;
+            display: block;
+            text-align: center;
+        }
+        &::before {
+            content: "$";
+            position: absolute;
+            left: -1.2rem;
+            top: 2px;
+            color: $color-primary;
+            @media (max-width: $bp-mobile) {
+                left: 0;
+                top: 0;
+            }
+            @media (max-width: $bp-mobile-sm) {
+                left: -8px;
+            }
+        }
+    }
+}
+.billbox,
+.tipbox {
+    margin-bottom: 1rem;
+}
+
+.custombox {
+    position: relative;
+    &:hover,
+    &:focus,
+    &:active {
+        .custom {
+            display: none;
+        }
+    }
+}
+
+.custom {
+    position: absolute;
+    background-color: $color-neutral-5;
+    color: $color-neutral-1;
+    width: 100%;
+    font-weight: $font-weight-lg;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
+.header--main {
+    margin-bottom: 1rem;
+}
