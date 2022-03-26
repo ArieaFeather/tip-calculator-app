@@ -16,12 +16,12 @@ Mobile-Sm: 325px
     color: black;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   body {
     color: black;
   }
 }
-@media (max-width: 325px) {
+@media (max-width: 375px) {
   body {
     color: black;
   }
@@ -88,7 +88,7 @@ form {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .tipbox {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -177,7 +177,7 @@ form {
   right: 0;
   font-size: 2rem;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .totalbox .tipsplit,
 .totalbox .totalsplit {
     position: relative;
@@ -193,14 +193,14 @@ form {
   top: 2px;
   color: #26c0ab;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .totalbox .tipsplit::before,
 .totalbox .totalsplit::before {
     left: 0;
     top: 0;
   }
 }
-@media (max-width: 325px) {
+@media (max-width: 375px) {
   .totalbox .tipsplit::before,
 .totalbox .totalsplit::before {
     left: -8px;
