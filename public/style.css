@@ -6,22 +6,22 @@ Mobile: 375px
 Mobile-Sm: 325px
 */
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
-@media (max-width: 1220px) {
+@media (max-width: 1440px) {
   body {
     color: black;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  body {
+    color: black;
+  }
+}
+@media (max-width: 500px) {
   body {
     color: black;
   }
 }
 @media (max-width: 375px) {
-  body {
-    color: black;
-  }
-}
-@media (max-width: 325px) {
   body {
     color: black;
   }
@@ -77,7 +77,7 @@ form {
   width: 50vw;
   grid-gap: 2rem;
 }
-@media (max-width: 1220px) {
+@media (max-width: 1440px) {
   form {
     grid-template-columns: 1fr;
   }
@@ -88,7 +88,7 @@ form {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .tipbox {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -159,7 +159,7 @@ form {
   border-radius: 11px;
   grid-template-rows: 2fr 2fr 1fr;
 }
-@media (max-width: 1220px) {
+@media (max-width: 1440px) {
   .totalbox {
     grid-template-rows: repeat(3, 2fr);
     grid-gap: 2rem;
@@ -177,7 +177,7 @@ form {
   right: 0;
   font-size: 2rem;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .totalbox .tipsplit,
 .totalbox .totalsplit {
     position: relative;
@@ -193,14 +193,14 @@ form {
   top: 2px;
   color: #26c0ab;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .totalbox .tipsplit::before,
 .totalbox .totalsplit::before {
     left: 0;
     top: 0;
   }
 }
-@media (max-width: 325px) {
+@media (max-width: 375px) {
   .totalbox .tipsplit::before,
 .totalbox .totalsplit::before {
     left: -8px;
